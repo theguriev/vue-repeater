@@ -9,6 +9,23 @@ The VueJS repeater component allows you to create a set of sub components which 
 or
 `npm install --save vue-repeater`
 
+## How it works
+
+### Start
+![Start](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/gifs/start.gif)
+
+### Reordering
+![Reordering](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/gifs/reordering.gif)
+
+### Add
+![Add](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/gifs/add.gif)
+
+### Remove
+![Remove](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/gifs/remove.gif)
+
+### Duplicate
+![Duplicate](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/gifs/duplicate.gif)
+
 ## Usage
 ### Basic example
 
