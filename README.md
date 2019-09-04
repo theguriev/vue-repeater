@@ -144,3 +144,7 @@ export default {
 }
 </style>
 ```
+
+## Contacts
+Telegram: [https://t.me/therealguriev](@therealguriev)
+Skype: live:gurev
