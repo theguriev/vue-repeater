@@ -11,7 +11,11 @@ module.exports = {
   configureWebpack: {
     output: {
       filename: 'js/[name].js',
-      chunkFilename: 'js/[name].js'
+      chunkFilename: 'js/[name].js',
+      libraryExport: 'default'
+    },
+    externals : {
+      lodash: 'lodash'
     }
   },
   runtimeCompiler: true

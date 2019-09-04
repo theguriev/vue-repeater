@@ -1,12 +1,17 @@
 {
   "name": "vue-repeater",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "author": "Eugen Guriev <gurievcreative@gmail.com",
   "description": "The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!",
-  "main": "dist/app.js",
+  "main": "dist/vue-repeater.common.js",
+  "module": "dist/vue-repeater.common.js",
+  "unpkg": "dist/vue-repeater.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --inline-vue src/components/repeater.vue",
+    "wc": "vue-cli-service build --target wc --name vue-repeater --inline-vue src/components/repeater.vue"
   },
   "dependencies": {
     "core-js": "^2.6.5",
