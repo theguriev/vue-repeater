@@ -146,5 +146,7 @@ export default {
 ```
 
 ## Contacts
+
 Telegram: [https://t.me/therealguriev](@therealguriev)
+
 Skype: live:gurev
