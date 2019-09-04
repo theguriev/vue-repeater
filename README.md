@@ -11,15 +11,103 @@ or
 
 ## Usage
 ### Basic example
-```javascript
-<script>
-import Repeater from './repeater'
 
+**./main.js** - entry point
+```javascript
+import Vue from 'vue'
+import App from './App.vue'
+
+import VueRepeater from 'vue-repeater'
+import 'vue-repeater/dist/vue-repeater.css'
+import address from './components/address'
+
+Vue.config.productionTip = false
+Vue.component('vue-repeater', VueRepeater)
+Vue.component('test-address', address)
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app')
+
+```
+
+**./components/address.js** - Component inside repeater
+```javascript
+<template>
+    <div class="address">
+        <div class="row">
+          <label>Street</label>
+          <input v-model="localAddress.street">
+        </div>
+        <div class="row">
+          <label>City</label>
+          <input v-model="localAddress.city">
+        </div>
+        <div class="row">
+          <label>Zip</label>
+          <input v-model="localAddress.zip">
+        </div>
+    </div>
+</template>
+<script>
 export default {
-  components: {
-    'repeater': Repeater
+  name: 'test-address',
+  props: {
+    value: {
+      type: Object,
+      required: true
+    }
   },
-  data() {
+  computed: {
+    localAddress: {
+      get () { return this.value },
+      set (localAddress) { this.$emit('input', localAddress) }
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+.address{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+label{
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+input{
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid var(--def-border-base);
+}
+</style>
+
+```
+
+
+
+**./App.vue** - application component
+```javascript
+<template>
+  <div id="app">
+    {{ fields }}
+    <vue-repeater v-model="fields"></vue-repeater>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'app',
+  data () {
     return {
       fields: [
         {
@@ -29,13 +117,13 @@ export default {
       ]
     }
   }
-};
+}
 </script>
 
-<template>
-    <div>
-      Here will be vue-repeater
-      <repeater v-model="fields"></repeater>
-    </div>
-</template>
+<style lang="scss">
+#app {
+  width: 900px;
+  margin: 100px auto;
+}
+</style>
 ```
