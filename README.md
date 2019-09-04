@@ -1,29 +1,41 @@
-# repeater
+# vue-repeater
 
-## Project setup
-```
-npm install
-```
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/LICENSE)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Install
+`yarn add vue-repeater`
+or
+`npm install --save vue-repeater`
 
-### Run your tests
-```
-npm run test
-```
+## Usage
+### Basic example
+```javascript
+<script>
+import Repeater from './repeater'
 
-### Lints and fixes files
-```
-npm run lint
-```
+export default {
+  components: {
+    'repeater': Repeater
+  },
+  data() {
+    return {
+      fields: [
+        {
+          name: 'test-address',
+          value: {}
+        }
+      ]
+    }
+  }
+};
+</script>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<template>
+    <div>
+      Here will be vue-repeater
+      <repeater v-model="fields"></repeater>
+    </div>
+</template>
+```

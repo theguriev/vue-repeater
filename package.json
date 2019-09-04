@@ -1,7 +1,8 @@
 {
-  "name": "repeater",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-repeater",
+  "version": "1.0.0",
+  "description": "The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!",
+  "main": "dist/app.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
