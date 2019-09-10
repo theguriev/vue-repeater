@@ -4,6 +4,8 @@
 
 The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!
 
+[Demo](https://vue-repeater.netlify.com/)
+
 ## Install
 `yarn add vue-repeater`
 or
