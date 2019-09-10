@@ -1,32 +1,10 @@
-// Import vue component
-import component from './components/repeater.vue'
+import Vue from 'vue'
+import Test from './components/Test.vue'
+import Address from './components/address.vue'
 
-// install function executed by Vue.use()
-export function install (Vue) {
-  if (install.installed) return
-  install.installed = true
-  Vue.component('vue-repeater', component)
-}
+Vue.config.productionTip = false
+Vue.component('test-address', Address)
 
-// Create module definition for Vue.use()
-const plugin = {
-  install
-}
-
-// To auto-install when vue is found
-let GlobalVue = null
-if (typeof window !== 'undefined') {
-  GlobalVue = window.Vue
-} else if (typeof global !== 'undefined') {
-  GlobalVue = global.Vue
-}
-if (GlobalVue) {
-  GlobalVue.use(plugin)
-}
-
-// To allow use as module (npm/webpack/etc.) export component
-export default component
-
-// It's possible to expose named exports when writing components that can
-// also be used as directives, etc. - eg. import { RollupDemoDirective } from 'rollup-demo';
-// export const RollupDemoDirective = component;
+new Vue({
+  render: h => h(Test)
+}).$mount('#app')

@@ -14,9 +14,9 @@ module.exports = {
       chunkFilename: 'js/[name].js',
       libraryExport: 'default'
     },
-    externals : {
-      lodash: 'lodash'
-    }
+    // externals : {
+    //   lodash: 'lodash'
+    // }
   },
   runtimeCompiler: true
 }
