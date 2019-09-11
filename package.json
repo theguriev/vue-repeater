@@ -1,6 +1,6 @@
 {
   "name": "vue-repeater",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Eugen Guriev <gurievcreative@gmail.com",
   "description": "The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!",
   "main": "dist/lib/vue-repeater.common.js",
