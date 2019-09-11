@@ -1,6 +1,6 @@
 module.exports = {
   chainWebpack: config => {
-    if(config.plugins.has('extract-css')) {
+    if (config.plugins.has('extract-css')) {
       const extractCSSPlugin = config.plugin('extract-css')
       extractCSSPlugin && extractCSSPlugin.tap(() => [{
         filename: 'css/[name].css',
@@ -13,7 +13,7 @@ module.exports = {
       filename: 'js/[name].js',
       chunkFilename: 'js/[name].js',
       libraryExport: 'default'
-    },
+    }
     // externals : {
     //   lodash: 'lodash'
     // }

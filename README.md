@@ -1,6 +1,8 @@
 # vue-repeater
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/LICENSE)
+[![npm version](https://badge.fury.io/js/vue-repeater.svg)](https://badge.fury.io/js/vue-repeater)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f018779-6609-4cde-b613-a2819b60e320/deploy-status)](https://app.netlify.com/sites/vue-repeater/deploys)
 
 The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!
 
