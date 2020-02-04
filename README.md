@@ -6,7 +6,7 @@
 
 The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!
 
-[Demo](https://vue-repeater.netlify.com/)
+[Demo on a real projec](https://wordpress.org/plugins/beagl/)
 
 ## Install
 `yarn add vue-repeater`
@@ -29,6 +29,9 @@ or
 
 ### Duplicate
 ![Duplicate](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/gifs/duplicate.gif)
+
+### Real project (Beagl)
+![Real project (Beagl)](https://raw.githubusercontent.com/gcofficial/vue-repeater/master/gifs/beagl.gif)
 
 ## Usage
 ### Basic example
