@@ -6,6 +6,8 @@
 
 The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!
 
+[Just try it](http://builder.beagl.in/#/builder/5)
+[Rendered](http://showcase.beagl.in/)
 [Demo on a real projec](https://wordpress.org/plugins/beagl/)
 
 ## Install
