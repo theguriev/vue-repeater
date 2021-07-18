@@ -53,7 +53,14 @@
     "last 2 versions"
   ],
   "license": "MIT",
-  "keywords": ["VueJS", "repeater", "ui", "ux", "gutenberg", "builder"],
+  "keywords": [
+    "VueJS",
+    "repeater",
+    "ui",
+    "ux",
+    "gutenberg",
+    "builder"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gcofficial/vue-repeater"
