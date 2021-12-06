@@ -59,6 +59,7 @@ export default {
     return {
       pFields: this.fields.map((el) => ({
         ...el,
+        /* specify a default value to be used when adding a new slide */
         defaultValue: cloneDeep(el.defaultValue),
       })),
       entered: -1,
@@ -75,6 +76,7 @@ export default {
     add(index, field) {
       const newFields = cloneDeep(this.pFields);
       const newField = cloneDeep(field);
+      // set the value of the new slide as the default value
       newField.value = newField.defaultValue;
       newField.active = false;
       newFields.splice(index, 0, newField);
